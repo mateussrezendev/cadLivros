@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta descricao="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Pesquisa de Livros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Cadastro e Pesquisa de Livros</h1>
+    <div id="cadastro">
+        <h2>Cadastro de livro</h2>
+        <form id="cadastroForm">
+            <label for="descricao">Nome:</label>
+            <input type="text" id="descricao" descricao="descricao" required><br>
+
+            <label for="isbn">isbn:</label>
+            <input type="text" id="isbn" descricao="isbn" required><br>
+
+            <button type="submit">Cadastrar</button>
+            <button type="button" onclick="atualizarlivro()">🔁Atualizar</button>
+            <button type="button" onclick="excluirlivro()">❌Excluir</button>
+        </form>
+    </div>
+    <div id="pesquisa">
+        <h2>Pesquisa de livro</h2>
+        <form id="pesquisaForm">
+            <label for="searchId">ID do livro:</label>
+            <input type="text" id="searchId" descricao="searchId"><br>
+
+            <button type="button" onclick="pesquisarlivro()">Pesquisar</button>
+        </form>
+        <p></p>
+        <div id="resultadoPesquisa"></div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
